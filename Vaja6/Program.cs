@@ -14,6 +14,23 @@ namespace vaja6 {
         public string u_geslo; //javni string, ki bo shranjen za up. geslo.
         public static int stIg = 1; // Javni int, ki je zadolzen za štetje igralcev.
 
+        public Igralec(string ime, string geslo)
+        {
+            u_ime = ime.Trim();
+            u_geslo = geslo.Trim();
+            id = stIg;
+            stIg++;
+        }
+
+        // Kopirni konstruktor
+        public Igralec(Igralec drugi)
+        {
+            this.u_ime = drugi.u_ime;
+            this.u_geslo = drugi.u_geslo;
+            this.id = stIg; // nov igralec dobi svoj unikaten id
+            stIg++;
+        }
+
         public Igralec() {
             u_ime = "";
             u_geslo = "";
