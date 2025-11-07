@@ -9,10 +9,10 @@ namespace vaja6 {
 
 	// Se en komentar
     class Igralec {
-        public int id;
-        public string u_ime;
-        public string u_geslo;
-        public static int stIg = 1;
+        public int id; //Naredi javni int, ki bo bil shranjen kot id.
+        public string u_ime; //Javni string, ki bo shranjen za up. ime.
+        public string u_geslo; //javni string, ki bo shranjen za up. geslo.
+        public static int stIg = 1; // Javni int, ki je zadolzen za štetje igralcev.
 
         public Igralec() {
             u_ime = "";
